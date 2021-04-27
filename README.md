@@ -13,8 +13,11 @@ The healthcare researchers will be able to learn about how different countries p
 Some specific questions that could be answered using this data are:
 
   Which countries historically have used healthcare more than others?
+  
   Which years had the highest healthcare utilization?
+  
   Which countries could benefit from additional healthcare utilization?
+  
   
 Based on the results, they will also be able to study the factors that affect the quality of healthcare utilization to improve their services.
 
