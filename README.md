@@ -1,5 +1,21 @@
 # info478-project
 INFO 478 Group Project
+
+## Project Descrption
+Who is your target audience? 
+
+Depending on the domain of your data, there may be a variety of audiences interested in using the dataset. You should hone in on one of these audiences.
+The target audience can be general as the public audience, but it will be healthcare researchers specifically. Healthcare researchers can use this data visualization to  understand the disparities in healthcare utilization across countries and provide assistance to countries with low utilization.
+
+What should your audience learn from your resource? Please consider specific questions that your project can answer using the data you have identified (that are related to the overarching purpose)
+The healthcare researchers will be able to learn about how different countries perform on their healthcare utilization including consultation, immunization, screening, and more.
+Some specific questions that could be answered using this data are:
+  Which countries historically have used healthcare more than others?
+  Which years had the highest healthcare utilization?
+  Which countries could benefit from additional healthcare utilization?
+Based on the results, they will also be able to study the factors that affect the quality of healthcare utilization to improve their services.
+
+
 ## Technical Description
 What will be the format of your final product (Shiny app, HTML page, compiled .Rmd file, etc)?
 
