@@ -23,9 +23,10 @@ In the histogram above, we can see the mean of the variable 'Average Hospital St
 This histogram shows us that many countries have long average hospital stay lengths, but this does not tell us a lot about healthcare utilization. It would be interesting to compare this to the average hospital stay length for all countries, and see which countries are higher and which countries are lower than the world average.
 
 ```{r, echo=FALSE, warning=FALSE}
-
+year_distribution_plot
 ```
 
+In the plot above, we can observe that there seems to be outlier at the tail ends of the data sets. In addition, for the most part there is more data around the year 2015. This means that the Data Set contains alot of data in the year 2015. For the most part, however, the data seems to be evenly distributed to include data from the entire range. It is also important to note that data is included from the year 2000-2019.
 
 ## Relationships between Variables
 ```{r, echo=FALSE, warning=FALSE}

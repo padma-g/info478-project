@@ -26,6 +26,13 @@ plot_hist <- ggplot(aggregated_df, aes(x = Value)) +
 
 # Ayush
 # Graph 2: Distribution of the mean of average hospital stay length by year
+year_distribution_plot <- ggplot(data = hospital_length_of_stay) +
+  geom_histogram(mapping = aes(x = Year), fill = "sea green", bins = 10) +
+  labs(
+    title = "Year Frequency Distribution",
+    x = "Year",
+    y = "Frequency"
+  )
 
 # Thomas
 # Graph 3: Make a scatter plot for a single country over time
