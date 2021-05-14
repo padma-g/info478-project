@@ -15,18 +15,16 @@ This report details our exploratory analysis of the "Length of hospital stay" he
 
 ## Distribution of Variables
 ```{r, echo=FALSE, warning=FALSE}
-plot_hist
+hist_length_of_stay
 ```
 
-In the histogram above, we can see the mean of the variable 'Average Hospital Stay Length' distributed by country. The dataset provides the average hospital stay length per country for all years from 2000 to 2017. We averaged the average hospital stay length across years to get a single value per country, and these values are shown in the distribution. As can be seen in the graph, the average length ranges from  4 to 18 years. The majority of countries have an average hospital stay length of around 8 days. Very few countries have an average hospital stay length of 10 days or greater.
-
-This histogram shows us that many countries have long average hospital stay lengths, but this does not tell us a lot about healthcare utilization. It would be interesting to compare this to the average hospital stay length for all countries, and see which countries are higher and which countries are lower than the world average.
+In the plot above, we can see the distribution of the variable 'Average Hospital Stay Length'. The dataset provides the average hospital stay length per country for a range of almost 20 years. As can be seen in the graph, the average stay length ranges from  4 to around 20 days The most common average length of stay is between 6 and 8 days. There are  few occurrences of an average hospital stay length of 10 days or more.
 
 ```{r, echo=FALSE, warning=FALSE}
 year_distribution_plot
 ```
 
-In the plot above, we can observe that there seems to be outlier at the tail ends of the data sets. In addition, for the most part there is more data around the year 2015. This means that the Data Set contains alot of data in the year 2015. For the most part, however, the data seems to be evenly distributed to include data from the entire range. It is also important to note that data is included from the year 2000-2019.
+In the plot above, we can observe that there seems to be outlier at the tail ends of the data sets. In addition, for the most part, there is more data around the year 2015. This means that the dataset contains a lot of data in the year 2015. For the most part, however, the data seems to be evenly distributed to include data from the entire range. It is also important to note that data is included from the year 2000-2019.
 
 ## Relationships between Variables
 ```{r, echo=FALSE, warning=FALSE}
