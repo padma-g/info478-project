@@ -10,10 +10,17 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Distribution of Variables
-```{r, echo = FALSE, warning=FALSE}
+```{r, echo=FALSE, warning=FALSE}
 plot_hist
 ```
 
 In the histogram above, we can see the mean of the variable 'Average Hospital Stay Length' distributed by country. The dataset provides the average hospital stay length per country for all years from 2000 to 2017. We averaged the average hospital stay length across years to get a single value per country, and these values are shown in the distribution. As can be seen in the graph, the average length ranges from  4 to 18 years. The majority of countries have an average hospital stay length of around 8 days. Very few countries have an average hospital stay length of 10 days or greater.
 
 This histogram shows us that many countries have long average hospital stay lengths, but this does not tell us a lot about healthcare utilization. It would be interesting to compare this to the average hospital stay length for all countries, and see which countries are higher and which countries are lower than the world average.
+
+## Relationships between Variables
+```{r, echo=FALSE, warning=FALSE}
+korea_plot
+```
+
+In the plot above, we can observe that the average length of stay in hospital generally increases over time in Korea from 2002 to 2018. This could have resulted from the increased risk of infection and medication side effects or decreased cost of hospitalization. The sudden increase in 2008 could have occurred from the mad cow disease, or bovine spongiform encephalopathy, which caused numerous hospitalizations.
