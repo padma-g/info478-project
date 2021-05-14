@@ -37,7 +37,7 @@ korea_plot <- ggplot(data = new_data) +
   labs(
     title = "Average Length of Stay in Hospital (Korea, 2002 - 2018)",
     x = "Years",
-    y = "Average Length of Stay"
+    y = "Average Length of Stay (in days)"
   )
 
 # Zikai
