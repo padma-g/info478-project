@@ -9,6 +9,10 @@ library(ggplot2)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+Group: Padma Gundapaneni, Ayush Banwari, Zikai Song, Thomas Lee
+
+This report details our exploratory analysis of the "Length of hospital stay" health care utilization dataset from OECD. We examined the distribution of variables and examined the relationships between variables. The variables we looked at are the average length of hospital stay, country, and year.
+
 ## Distribution of Variables
 ```{r, echo=FALSE, warning=FALSE}
 plot_hist
@@ -18,9 +22,20 @@ In the histogram above, we can see the mean of the variable 'Average Hospital St
 
 This histogram shows us that many countries have long average hospital stay lengths, but this does not tell us a lot about healthcare utilization. It would be interesting to compare this to the average hospital stay length for all countries, and see which countries are higher and which countries are lower than the world average.
 
+```{r, echo=FALSE, warning=FALSE}
+
+```
+
+
 ## Relationships between Variables
 ```{r, echo=FALSE, warning=FALSE}
 korea_plot
 ```
 
 In the plot above, we can observe that the average length of stay in hospital generally increases over time in Korea from 2002 to 2018. This could have resulted from the increased risk of infection and medication side effects or decreased cost of hospitalization. The sudden increase in 2008 could have occurred from the mad cow disease, or bovine spongiform encephalopathy, which caused numerous hospitalizations.
+
+```{r, echo=FALSE, warning=FALSE}
+barp
+```
+
+From the graph, we discovered that the Czech Republic has the longest average length in the hospital in 2000, and Mexico has the lowest average length in hospital in 2000. Average length in hospital is linked to many factors, such as price of medical service, medical resources, and public health conditions. Simply looking at the average length in hospital cannot give us a overview of the public health conditions of the countries.
