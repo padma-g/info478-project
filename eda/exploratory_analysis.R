@@ -6,13 +6,17 @@ hospital_length_of_stay <- read.csv('data/HEALTH_PROC_11052021025328109.csv')
 ##################################################################################
 # Padma
 # Graph 1: Distribution of the mean of average hospital stay length by country
-agg = aggregate(hospital_length_of_stay,
+aggregated_df = aggregate(hospital_length_of_stay,
       by = list(hospital_length_of_stay$Country),
-      FUN = median)
+      FUN = mean)
 
-colnames(agg) <- c("CountryName", "", "", "", "", "", "", "", "", "Value")
+colnames(aggregated_df) <- c("CountryName", "", "", "", "", "", "", "", "", "Value")
 
-barplot(table(agg$Value))
+plot_hist<-ggplot(aggregated_df, aes(x=Value)) + 
+  geom_histogram(color="black", fill="lightblue", binwidth=1) +
+  labs(x="Average Hospital Stay (in days)",
+       y="Number of Countries",
+       title="Average Hospital Stay Per Country")
 
 ##################################################################################
 # Ayush
