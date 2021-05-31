@@ -49,7 +49,7 @@ map_panel <- tabPanel(
             )),
         mainPanel(
             h4("Map"),
-            plotOutput(outputId = "plot_map"),
+            leafletOutput(outputId = "map"),
         )
     )
 )

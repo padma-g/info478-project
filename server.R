@@ -28,23 +28,23 @@ server <- function(input, output) {
         lh_plot
     })
     
-    output$plot_map <- renderLeaflet({
+    output$map <- renderLeaflet({
         df <- world.cities %>%
             filter(capital == 1) %>%
             dplyr::select(Country = country.etc, lat, lng = long) %>%
             left_join(hospital_length_of_stay, ., by = "Country") %>% 
             filter(Year==input$Year)
         
-        map <- leaflet(df)%>%
+        map <- leaflet(df) %>%
             addProviderTiles("CartoDB.Positron") %>%
             addCircleMarkers(
                 lat = ~lat,
                 lng = ~lng,
-                radius = ~ Value / 2,
+                radius = ~ Value / 5,
                 color = "red",
                 stroke = FALSE,
                 popup = paste0("Country: ", df$Country)
-                )
+            )
         
         map
     })
