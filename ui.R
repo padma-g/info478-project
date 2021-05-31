@@ -13,7 +13,7 @@ intro_panel <- tabPanel(
   p("In the recent global pandemic of COVID-19, we noticed that a great
     number of countries faced or are facing the issue of medical resource
     shortage. People lost their lives because of the lack of beds,
-    ICU spots, or even oxygen. This phenomenon raised our concerns in
+    ICU spots, and even oxygen. This phenomenon raised our concerns in
     medical and healthcare resource and utilization data. In this research,
     examined the healthcare usage data by countries to uncover some insights
     about the distribution and utilization of healthcare resources across
@@ -103,7 +103,7 @@ map_panel <- tabPanel(
 insights_panel <- tabPanel(
   "Insights and Conclusion",
   h4("Insights"),
-  p(""),
+  p(" "),
   h4("Conclusion"),
   p(" ")
 )
