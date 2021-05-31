@@ -1,6 +1,9 @@
 # INFO 478 Group Project
 
 ## Project Description
+### ShinyApps Link
+https://padmag.shinyapps.io/info478-project/
+
 ### Purpose
 
 The purpose of this research project is to visualize healthcare utilization by country over time. We hope to understand the differences in healthcare utilization across countries and the factors that affect healthcare utilization. This research project will allow us to identify which countries have lower healthcare utilization and could benefit from additional healthcare utilization. It will also allow stakeholders to visualize the healthcare utilization over time.
