@@ -24,7 +24,7 @@ server <- function(input, output) {
         y = Stay
       ), group = 1) +
       labs(
-        title = "Hospital Average Length of Stay by Countries (2000 - 2018)",
+        title = "Hospital Average Length of Stay by Country (2000 - 2018)",
         x = "Year", y = paste0("Average Length of Stay for ", input$Country),
         color = "Country"
       )

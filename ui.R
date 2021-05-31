@@ -50,7 +50,7 @@ intro_panel <- tabPanel(
 )
 
 year_panel <- tabPanel(
-  "Hospital Average Length of Stay by Countries",
+  "Hospital Average Length of Stay by Country",
   sidebarLayout(
     sidebarPanel(
       h4("Adjustable Parameters"),
@@ -70,7 +70,7 @@ year_panel <- tabPanel(
       )
     ),
     mainPanel(
-      h4("Scatterplot"),
+      h4("Hospital Average Length of Stay by Country"),
       plotOutput(outputId = "plot_data"),
     )
   )
@@ -94,7 +94,7 @@ map_panel <- tabPanel(
       )
     ),
     mainPanel(
-      h4("Map"),
+      h4("Hospital Average Length of Stay by Year"),
       leafletOutput(outputId = "map"),
     )
   )
