@@ -101,7 +101,11 @@ map_panel <- tabPanel(
 )
 
 insights_panel <- tabPanel(
-  "Insights and Conclusion"
+  "Insights and Conclusion",
+  h4("Insights"),
+  p(""),
+  h4("Conclusion"),
+  p(" ")
 )
 
 ui <- fluidPage(
