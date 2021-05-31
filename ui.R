@@ -103,7 +103,7 @@ map_panel <- tabPanel(
 insights_panel <- tabPanel(
   "Insights and Conclusion",
   h4("Insights"),
-  p(" "),
+  p("Hospital average length of stay has stayed consistent across the years 2011-2017."),
   h4("Conclusion"),
   p(" ")
 )
