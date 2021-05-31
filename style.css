@@ -1,0 +1,16 @@
+h1 {
+  color: black;
+  background: white;
+  padding: 5px;
+}
+
+h3 {
+  color: black;
+  background: lightblue;
+  padding: 5px;
+  font: serif;
+}
+
+h4 {
+  font: sans-serif;
+}
