@@ -36,7 +36,7 @@ server <- function(input, output) {
     df <- world.cities %>%
       filter(capital == 1) %>%
       dplyr::select(Country = country.etc, lat, lng = long) %>%
-      left_join(hospital_length_of_stay, ., by = "Country") %>%
+      left_join(data, ., by = "Country") %>%
       filter(Year == input$Year)
 
     map <- leaflet(df) %>%
