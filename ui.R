@@ -19,15 +19,34 @@ intro_panel <- tabPanel(
     about the distribution and utilization of healthcare resources across
     the globe."),
   h4("Data"),
-  p("The dataset we used comes from the Organisation for Economic Co-operation
+  p(
+    "The dataset we used comes from the Organisation for Economic Co-operation
     (OECD). The dataset contains healthcare utilization data from many different
     countries from 2000 to 2018. It includes data about the average length of
     stay in a hospital by year and country, as well as by medical condition.
     The data was collected by OECD from a variety of credible health
     departments across the world. The data was accessed from the OECD website,
     at the following",
-    tags$a(href = "https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_PROC#",
-           "link"), ".")
+    tags$a(
+      href = "https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_PROC#",
+      "link."
+    )
+  ),
+  h4("Methods"),
+  p("We filtered the dataset by year and country to obtain healthcare
+    utilization data by those two parameters. We not only looked at the most
+    recent year of data, but also compared data across year to understand
+    how healthcare utilization has changed over time. We analyzed differences
+    across countries as well to see which countries use hospitals more
+    and which ones use them less."),
+  h4("Insights and Benefits"),
+  p("Using our resource, healthcare researchers will be able to learn
+  about how different countries perform on their healthcare utilization.
+  Some specific questions that we answered are: 'Which countries historically
+  have used healthcare more than others?' and 'Which years had the highest
+  healthcare utilization?' Based on our insights, researchers will also
+  be able to study the factors that affect the quality of healthcare
+  utilization to improve their services.")
 )
 
 year_panel <- tabPanel(
@@ -65,10 +84,12 @@ map_panel <- tabPanel(
       selectInput(
         inputId = "Year",
         label = "Year",
-        choices = c("2000", "2001", "2002", "2003", "2004", "2005",
-                    "2006", "2007", "2008", "2009", "2010", "2011",
-                    "2012", "2013", "2014", "2015", "2016", "2017",
-                    "2018"),
+        choices = c(
+          "2000", "2001", "2002", "2003", "2004", "2005",
+          "2006", "2007", "2008", "2009", "2010", "2011",
+          "2012", "2013", "2014", "2015", "2016", "2017",
+          "2018"
+        ),
         selected = "2000"
       )
     ),
