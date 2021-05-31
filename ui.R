@@ -8,7 +8,7 @@ data <- read.csv("eda/data/HEALTH_PROC_11052021025328109.csv")
 
 intro_panel <- tabPanel(
   "Introduction",
-  p("Group: Padma Gundapaneni, Ayush Banwari, Thomas Lee, Zikai Song"),
+  p("Group 8: Padma Gundapaneni, Ayush Banwari, Thomas Lee, Zikai Song"),
   h4("Purpose"),
   p("In the recent global pandemic of COVID-19, we noticed that a great
     number of countries faced or are facing the issue of medical resource
@@ -103,9 +103,29 @@ map_panel <- tabPanel(
 insights_panel <- tabPanel(
   "Insights and Conclusion",
   h4("Insights"),
-  p("Hospital average length of stay has stayed consistent across the years 2011-2017."),
+  p("Hospital average length of stay has stayed consistent across the years 
+    2011-2017. In the United States there is an interesting drop between the years
+    2005 and 2007 when the average length of hospital stay was much less than
+    the years prior and following this time frame. Interestingly countries such
+    as Spain and Korea had spikes at the tail end of this time period (roughly 
+    2017), while most other countries such as the United States, United Kingdom,
+    and New Zealand saw lows in the at the tail end of the time period. The map
+    is also of interest because the map shows that throughout the years European
+    countries have not had a vast amount of change of hospital average length of
+    stay during the time period of 2011-2018."),
   h4("Conclusion"),
-  p(" ")
+  p("Therefore, while analyzing the data set and displaying it in the form of an
+    app we were able to gain valuable insights of the change in hospital average
+    length of stay. It was interesting to have one page dedicated to each countries
+    average length of stay as well as a map that would show how the hospital
+    average length of stay changed over time for all countries on a macro-level.
+    Though the data set concerned data from the time periods between roughly 
+    2011-2018, it is interesting to understand how the current pandemic may have
+    changed this average length of stay. This app could allow researchers in the
+    future to compare the hospital length of stay during the pandemic to the 
+    hospital length of stay prior to the pandemic. Thus, by creating we hope to
+    provide crucial knowledge to population health researchers in order to plan
+    for any future possible threats to public health.")
 )
 
 ui <- fluidPage(
